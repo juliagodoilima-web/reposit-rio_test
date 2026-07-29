@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SoundVibe | Blog de Música</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">🎵 SoundVibe</div>
+        <button class="theme-btn" id="themeToggle">Alternar Tema</button>
+    </header>
+
+    <main class="container">
+        <article class="post-card">
+            <img src="https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?w=500" alt="Microfone" class="post-img">
+            <div class="post-content">
+                <span class="post-tag">Análise</span>
+                <h2 class="post-title">A Evolução do Jazz no Século XXI</h2>
+                <p class="post-excerpt">Como novos artistas estão misturando elementos de hip-hop e música eletrônica ao jazz tradicional...</p>
+            </div>
+        </article>
+
+        <article class="post-card">
+            <img src="https://images.unsplash.com/photo-1470225620780-dba8ba36b745?w=500" alt="Mesa de DJ" class="post-img">
+            <div class="post-content">
+                <span class="post-tag">Lançamentos</span>
+                <h2 class="post-title">Os Melhores Álbuns do Mês</h2>
+                <p class="post-excerpt">Confira a nossa seleção com os discos que definiram o som deste mês ao redor do mundo...</p>
+            </div>
+        </article>
+
+        <article class="post-card">
+            <img src="https://images.unsplash.com/photo-1465847899084-d164df4dedc6?w=500" alt="Sintetizador" class="post-img">
+            <div class="post-content">
+                <span class="post-tag">Produção</span>
+                <h2 class="post-title">Como Criar Beats em Casa</h2>
+                <p class="post-excerpt">Um guia prático para iniciantes sobre escolha de softwares, equipamentos básicos e primeiros passos...</p>
+            </div>
+        </article>
+    </main>
+
+    <div class="player-bar">
+        <div class="player-info">
+            <strong>Música em Destaque</strong>
+            <span class="track-name">- Synthwave Jam</span>
+        </div>
+        <button class="play-btn" id="playBtn">▶</button>
+        <audio id="audioPlayer" src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"></audio>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
