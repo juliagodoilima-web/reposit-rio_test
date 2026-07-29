@@ -3,53 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SoundVibe | Blog de Música</title>
+    <title>Sons & Sintonias | Blog de Música</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
     <header>
-        <div class="logo">🎵 SoundVibe</div>
-        <button class="theme-btn" id="themeToggle">Alternar Tema</button>
+        <h1>🎵 Sons & Sintonias</h1>
+        <p>Seu portal diário de lançamentos, análises e playlists</p>
     </header>
 
     <main class="container">
-        <article class="post-card">
-            <img src="https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?w=500" alt="Microfone" class="post-img">
-            <div class="post-content">
-                <span class="post-tag">Análise</span>
-                <h2 class="post-title">A Evolução do Jazz no Século XXI</h2>
-                <p class="post-excerpt">Como novos artistas estão misturando elementos de hip-hop e música eletrônica ao jazz tradicional...</p>
-            </div>
+        
+        <article class="post">
+            <span class="tag">Análise</span>
+            <h2>O Retorno dos Discos de Vinil na Era Digital</h2>
+            <p class="data">Publicado em 20 de Outubro</p>
+            <p>Por que tantas pessoas estão voltando a comprar discos físicos em pleno século XXI? Analisamos o apelo tátil e a qualidade sonora que conquistou a nova geração...</p>
+            
+            <button class="btn-curtir">
+                ❤️ Curtir (<span class="contador">0</span>)
+            </button>
         </article>
 
-        <article class="post-card">
-            <img src="https://images.unsplash.com/photo-1470225620780-dba8ba36b745?w=500" alt="Mesa de DJ" class="post-img">
-            <div class="post-content">
-                <span class="post-tag">Lançamentos</span>
-                <h2 class="post-title">Os Melhores Álbuns do Mês</h2>
-                <p class="post-excerpt">Confira a nossa seleção com os discos que definiram o som deste mês ao redor do mundo...</p>
-            </div>
+        <article class="post">
+            <span class="tag">Lançamento</span>
+            <h2>Top 5 Álbuns Indie para Ouvir esta Semana</h2>
+            <p class="data">Publicado em 18 de Outubro</p>
+            <p>Separamos cinco destaques do cenário independente que você precisa colocar no seu fone de ouvido agora mesmo. Prepare sua playlist!</p>
+            
+            <button class="btn-curtir">
+                ❤️ Curtir (<span class="contador">0</span>)
+            </button>
         </article>
 
-        <article class="post-card">
-            <img src="https://images.unsplash.com/photo-1465847899084-d164df4dedc6?w=500" alt="Sintetizador" class="post-img">
-            <div class="post-content">
-                <span class="post-tag">Produção</span>
-                <h2 class="post-title">Como Criar Beats em Casa</h2>
-                <p class="post-excerpt">Um guia prático para iniciantes sobre escolha de softwares, equipamentos básicos e primeiros passos...</p>
-            </div>
-        </article>
     </main>
 
-    <div class="player-bar">
-        <div class="player-info">
-            <strong>Música em Destaque</strong>
-            <span class="track-name">- Synthwave Jam</span>
-        </div>
-        <button class="play-btn" id="playBtn">▶</button>
-        <audio id="audioPlayer" src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"></audio>
-    </div>
+    <footer>
+        <p>&copy; 2026 Sons & Sintonias. Todos os direitos reservados.</p>
+    </footer>
 
     <script src="script.js"></script>
 </body>

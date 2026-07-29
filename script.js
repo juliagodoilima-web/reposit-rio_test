@@ -1,20 +1,20 @@
-// Seleção dos elementos do DOM
-const themeBtn = document.getElementById('themeToggle');
-const audio = document.getElementById('audioPlayer');
-const playBtn = document.getElementById('playBtn');
+// Seleciona todos os botões de curtir na página
+const botoesCurtir = document.querySelectorAll('.btn-curtir');
 
-// 1. Alternar Tema Claro / Escuro
-themeBtn.addEventListener('click', () => {
-    document.body.classList.toggle('light-theme');
-});
+// Adiciona o evento de clique para cada botão
+botoesCurtir.forEach(botao => {
+    botao.addEventListener('click', () => {
+        // Encontra o elemento de texto com o número de curtidas dentro do botão
+        const contador = botao.querySelector('.contador');
+        
+        // Pega o valor atual e soma +1
+        let curtidasAtuais = parseInt(contador.textContent);
+        contador.textContent = curtidasAtuais + 1;
 
-// 2. Controle do Player de Áudio (Play / Pause)
-playBtn.addEventListener('click', () => {
-    if (audio.paused) {
-        audio.play();
-        playBtn.textContent = '⏸';
-    } else {
-        audio.pause();
-        playBtn.textContent = '▶';
-    }
+        // Feedback visual rápido
+        botao.style.transform = 'scale(1.1)';
+        setTimeout(() => {
+            botao.style.transform = 'scale(1)';
+        }, 150);
+    });
 });
